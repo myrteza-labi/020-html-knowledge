@@ -366,131 +366,352 @@
                 "IE=5"
             </li>
         </ul>
-        <div class="my-10">
-            <h3>Qu'est-ce qu'une balise optionnelle en HTML ?</h3>
-            <p>En HTML, une balise optionnelle est une balise qui n'est pas nécessaire
-                pour que le code HTML soit valide.
-            </p>
-            <p>Par exemple, les balises "meta", "head", et "li" dans des listes ordonnées ou non,
-                sont des balises optionnelles.
-            </p>
-            <p>Néanmoins, il est recommandé d'utiliser ces balises pour une meilleure
-                lisibilité du code HTML par les autres développeurs ou vous-même.
-            </p>
-        </div>
-
-        <div class="my-10">
-            <h2>Qu'est-ce qu'un système de templating HTML ?</h2>
-            <p>Un système de templating est un framework ou une bibliothèque,
-                selon la technologie utilisée. C'est un système comparable à un gabarit
-                permettant de créer des pages HTML de manière plus simple et plus rapide.
-            </p>
-            <p>Voici des exemples de technologies de templating HTML :</p>
-            <ul>
-                <li>
-                    Mustache
-                </li>
-                <li>
-                    HandleBars
-                </li>
-                <li>
-                    Twig
-                </li>
-            </ul>
-        </div>
-
-        <div class="my-10">
-            <h2>Comment change-t-on la direction d'un texte dans un fichier HTML ?</h2>
-            <p>Il existe plusieurs façons de changer la direction du texte en HTML.</p>
+        <!DOCTYPE html>
+        <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Correction de fautes</title>
+        </head>
+        <body>
             <div>
-                <p>Élément par élément :</p>
-                <mark>&lt;p dir="ltr">Ce texte se lit de gauche à droite &lt;/p></mark>
-                <p dir="ltr">Ce texte se lit de gauche à droite</p>
-                <mark>&lt;p dir="rtl">Ce texte se lit de droite à gauche &lt;p></mark>
-                <p dir="rtl">Ce texte se lit de droite à gauche</p>
+                <p>Cet attribut n'est plus très utile de nos jours.</p>
+            </div>
+            <div class="my-10">
+                <h3>Qu'est-ce qu'une balise optionnelle en HTML ?</h3>
+                <p>En HTML, une balise optionnelle est une balise qui n'est pas nécessaire
+                    pour que le code HTML soit valide.
+                </p>
+                <p>Par exemple, les balises "meta", "head" et "li" dans des listes ordonnées ou non,
+                    sont des balises optionnelles.
+                </p>
+                <p>Malgré tout, il est recommandé d'utiliser ces balises pour une meilleure
+                    lisibilité du code HTML par les autres développeurs ou vous-même.
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>Qu'est-ce qu'un système de templating HTML?</h2>
+                <p>Un système de templating est un framework ou une bibliothèque
+                    selon la technologie utilisée. C'est un système comparable à un gabarit
+                    permettant de créer des pages HTML de façon plus simple et plus rapide.
+                </p>
+                <p>Voici des exemples de technologies de templating HTML :</p>
+                <ul>
+                    <li>
+                        Mustache
+                    </li>
+                    <li>
+                        Handlebars
+                    </li>
+                    <li>
+                        Twig
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="my-10">
+                <h2>Comment change-t-on la direction d'un texte dans un fichier HTML ?</h2>
+                <p>Il existe plusieurs façons de changer la direction du texte en HTML.</p>
+                <div>
+                    <p>Élément par élément :</p>
+                    <mark>&lt;p dir="ltr">Ce texte se lit de gauche à droite &lt;/p></mark>
+                    <p dir="ltr">Ce texte se lit de gauche à droite</p>
+                    <mark>&lt;p dir="rtl">Ce texte se lit de droite à gauche &lt;p></mark>
+                    <p dir="rtl">Ce texte se lit de droite à gauche</p>
+                </div>
+                <div>
+                    <p>Ce changement de direction peut également se faire de façon générale 
+                        dans la valeur de l'attribut "dir" de la balise HTML, par exemple :
+                        &lt;html dir="rtl">...</html>
+                    </p>
+                </div>
+            </div>
+            <div class="my-10">
+                <h2>Qu'est-ce que l'attribut defer en HTML ?</h2>
+                <p>En HTML, l'attribut defer sur une balise <mark>script</mark> permet
+                    d'attendre la fin du chargement de la page HTML pour ensuite
+                    commencer à charger le fichier JavaScript. Cela améliore la performance
+                    et ne bloque pas l'affichage de la page HTML.
+                    Defer = Déférer / reporter
+                </p>
+                <!--  <script src="index.js" defer></script>  -->
+            </div>
+            <div class="my-10">
+                <h2>Que signifie l'attribut <mark>async</mark> sur une balise <mark>script</mark> en HTML ?</h2>
+                <p>En HTML, l'attribut async signifie que le chargement de la page et du fichier HTML
+                    se font en même temps. Une fois le fichier JavaScript chargé, il est exécuté.
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>Qu'est-ce que la balise <mark>small</mark> en HTML ?</h2>
+                <p>La balise <mark>small</mark> est une balise indiquant que son contenu est de moindre importance.</p>
+                <p>Exemple :</p>
+                <p>L'ours brun du Canada est un ours pouvant peser plus de 500 kilos.
+                    <small>Il aime manger du miel.</small>
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>Comment gérer plusieurs langues pour une page HTML ?</h2>
+                <p>
+                    Pour gérer plusieurs langues pour une page HTML, plusieurs actions sont nécessaires.
+                    Tout d'abord, il faut renseigner la langue principale dans la balise HTML comme suit :
+                    <mark>&lt;html lang="fr">&lt;/html></mark>
+                </p>
+                <p>
+                    Ensuite, pour les textes en différentes langues, vous devez rédiger
+                    un texte pour chaque langue que vous désirez intégrer à votre page web.
+                    Ensuite, grâce à l'attribut <mark>lang</mark>, vous pourrez spécifier
+                    quelle langue appartient à quel texte. Exemple :
+                </p>
+                <p>
+                    <mark>&lt;p lang="fr">Ceci est un texte en français&lt;/p></mark>
+                </p>
+                <p>
+                    <mark>&lt;p lang="en">This is an English text&lt;/p></mark>
+                </p>
+                <p>Ensuite, selon la langue sélectionnée par défaut dans le navigateur par l'utilisateur,
+                    celui-ci affichera tel ou tel texte.
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>Qu'y a-t-il de nouveau dans HTML5 ?</h2>
+                <p>Dans HTML5, les nouveautés sont :</p>
+                <ul>
+                    <li>
+                        Une meilleure sémantique grâce à l'ajout de nouvelles balises à valeur sémantique.
+                    </li>
+                    <li>
+                        Une prise en charge de certains médias tels que les vidéos ou les graphiques
+                        qui ne nécessite désormais plus le besoin d'avoir un plugin tel que Flash
+                        installé sur son ordinateur.
+                    </li>
+                    <li>
+                        Des normes plus strictes permettant une meilleure standardisation entre
+                        navigateurs.
+                    </li>
+                    <li>
+                        HTML5 permet un stockage local sur l'ordinateur de l'utilisateur.
+                    </li>
+                    <li>
+                        HTML5 améliore les performances grâce à la prise en charge de tâches asynchrones
+                        et également la prise en charge de la géolocalisation.
+                    </li>
+                </ul>
+            </div>
+            <div class="my-10">
+                <h2>Quelle est la différence entre la balise "div" et la balise "section" ?</h2>
+                <p>La balise <mark>div</mark> sert à diviser la page web en plusieurs parties.
+                    Elle n'apporte aucune valeur sémantique et son contenu peut être aléatoire.
+                </p>
+                <p>
+                    La balise "section" est une balise permettant de sectionner la page web
+                    en parties abordant le même thème comme "contact", "qui sommes-nous", "accueil"
+                    ou parlant d'un sujet du même thème tel qu'Halloween.
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>À quoi sert l'attribut <mark>rel="noopener"</mark> ?</h2>
+                <p>L'attribut <mark>noopener</mark> est très utile en termes de sécurité. En effet, lorsqu'un lien
+                    est ouvert dans une nouvelle fenêtre via l'attribut <mark>target="_blank"</mark>, la nouvelle fenêtre
+                    est encore en lien avec la fenêtre parente. Des attaques peuvent venir via ce lien/ouverture.
+                    L'attribut <mark>rel="noopener"</mark> permet de couper cette ouverture vers la fenêtre parente.
+                    Il évite ainsi les risques liés à cette attaque.
+                </p>
             </div>
             <div>
-                <p>Ce changement de direction peut également se faire de manière générale
-                    dans la valeur de l'attribut "dir" de la balise html, par exemple :</p>
-                <mark>&lt;html dir="rtl"&gt;</mark>
+                <h2>Une page HTML peut-elle contenir plusieurs headers ou plusieurs footers ?</h2>
+                <p>Une page HTML peut contenir, pour le contenu de la page globale (body),
+                    un seul header et un seul footer. Néanmoins, une section ou un article peuvent également
+                    comporter un header et un footer.
+                    En résumé, dans une page HTML, il peut y avoir plusieurs balises header et footer,
+                    mais le document HTML doit quant à lui n'avoir qu'un seul header et un seul footer.
+                </p>
             </div>
-        </div>
-
-        <div class="my-10">
-            <h2>Qu'est-ce que l'attribut "defer" en HTML ?</h2>
-            <p>En HTML, l'attribut "defer" sur une balise <mark>&lt;script&gt;</mark> permet
-                d'attendre la fin du chargement de la page HTML pour ensuite
-                commencer à charger le fichier JavaScript. Cela améliore les performances
-                et ne bloque pas l'affichage de la page HTML.
-            </p>
-            <!-- <script src="index.js" defer></script> -->
-        </div>
-
-        <div class="my-10">
-            <h2>Que signifie l'attribut <mark>async</mark> sur une balise <mark>&lt;script&gt;</mark> en HTML ?</h2>
-            <p>En HTML, l'attribut <mark>async</mark> signifie que le chargement de la page et du fichier HTML
-                se font en même temps. Une fois le fichier JavaScript chargé, il est exécuté.
-            </p>
-        </div>
-
-        <div class="my-10">
-            <h2>Qu'est-ce que la balise <mark>&lt;small&gt;</mark> en HTML ?</h2>
-            <p>La balise <mark>&lt;small&gt;</mark> est une balise indiquant que son contenu est de moindre importance.</p>
-            <p>Exemple :</p>
-            <p>L'ours brun du Canada est un ours pouvant peser plus de 500 kilos.
-                <small>Il aime manger du miel.</small>
-            </p>
-        </div>
-
-        <div class="my-10">
-            <h2>Comment gérer plusieurs langues pour une page HTML ?</h2>
-            <p>Pour gérer plusieurs langues pour une page HTML, plusieurs actions sont nécessaires.</p>
-            <p>Tout d'abord, il faut renseigner la langue principale dans la balise HTML, par exemple :</p>
-            <mark>&lt;html lang="fr"&gt;</mark>
-            <p>Ensuite, pour les textes en différentes langues, vous devez rédiger
-                un texte pour chaque langue que vous désirez intégrer à votre page web.
-                Ensuite, grâce à l'attribut <mark>lang</mark>, vous pourrez spécifier
-                quelle texte appartient à quelle langue. Exemple :</p>
-            <mark>&lt;p lang="fr">Ceci est un texte en français&lt;/p></mark>
-            <mark>&lt;p lang="en" >This is an English text&lt;/p></mark>
-            <p>Ensuite, selon la langue sélectionnée par défaut dans le navigateur par l'utilisateur,
-                celui-ci affichera tel ou tel texte.
-            </p>
-        </div>
-
-        <div class="my-10">
-            <h2>Qu'est-ce qui est nouveau dans HTML5 ?</h2>
-            <p>Dans HTML5, les nouveautés sont :</p>
-            <ul>
-                <li>
-                    Une meilleure sémantique grâce à l'ajout de nouvelles balises à valeur sémantique.
-                </li>
-                <li>
-                    Une prise en charge de certains médias tels que les vidéos ou les graphiques
-                    qui ne nécessitent désormais plus le besoin d'avoir un plugin tel que Flash
-                    installé sur son ordinateur.
-                </li>
-                <li>
-                    Des normes plus strictes permettant une meilleure standardisation entre
-                    navigateurs.
-                </li>
-                <li>
-                    HTML5 permet un stockage local sur l'ordinateur de l'utilisateur.
-                </li>
-                <li>
-                    HTML5 améliore les performances grâce à la prise en charge de tâches asynchrones
-                    et également la prise en charge de la géolocalisation.
-                </li>
-            </ul>
-        </div>
-
-        <div class="my-10">
-            <h2>Quelle est la différence entre la balise "div" et la balise "section" ?</h2>
-            <p>La balise <mark>&lt;div&gt;</mark> sert à diviser la page web en plusieurs parties.
-                Elle n'apporte aucune valeur sémantique et son contenu peut être aléatoire.
-            </p>
-            <p>La balise <mark>&lt;section&gt;</mark> est une balise permettant de sectionner la page web
-                en parties abordant le même thème comme "contact", "qui sommes-nous", "accueil"
-                ou parlant d'un sujet du même thème tel qu'Halloween.
-            </p>
-        </div>
+            <div class="my-10">
+                <h2>Qu'est-ce que WebSQL ?</h2>
+                <p>WebSQL est (était) une base de données intégrée au navigateur de l'utilisateur.
+                    Il n'est plus dans les normes du W3C aujourd'hui.
+                </p>
+            </div>
+            <div>
+                <h2>Qu'est-ce que le DOM ?</h2>
+                <p>Le DOM (Document Object Model) est l'objet modélisé du document HTML.</p>
+                <p>
+                    Lorsque l'on interagit avec les balises HTML, les attributs, etc., on n'interagit
+                    pas sur le code en dur dans le fichier .html, mais plutôt sur sa représentation numérique,
+                    le DOM.
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>HTML5 a introduit la notion de localStorage et sessionStorage, expliquez-les</h2>
+                <p>Grâce à HTML5, il est possible de stocker des informations directement dans le
+                    navigateur côté client. Contrairement aux cookies qui sont stockés côté client
+                    mais envoyés au serveur pendant les requêtes HTTP, localStorage et sessionStorage
+                    stockent les données uniquement côté client.
+                    La différence avec les cookies se trouve également au niveau de l'espace disponible
+                    pour stocker les données. L'espace pour stocker les données des cookies étant bien
+                    plus limité que celui des deux méthodes évoquées précédemment.
+                    La troisième différence réside dans la durée de vie des données.
+                    La différence entre localStorage et sessionStorage réside dans la durée de vie
+                    des données et leur portée.
+                    localStorage conserve les données même après la fermeture du navigateur et
+                    partage celles-ci avec toutes les fenêtres du même navigateur.
+                    sessionStorage, quant à lui, conserve les données uniquement sur une fenêtre et
+                    les supprime une fois la fenêtre ou le navigateur fermé.
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>À quoi sert l'attribut "data-" en HTML ?</h2>
+                <p>L'attribut data- sert à stocker des données dans les balises HTML.</p>
+                <p>Exemple :</p>
+                <!-- <p data-nam="Myrteza">Je suis Myrteza</p> -->
+                <!-- <p data-lasteName="Labi">Mon nom est Labi</p> -->
+            </div>
+            <div class="my-10">
+                <h2>Quelle est la différence entre XHTML et HTML ?</h2>
+                <p>XHTML est également un langage de balisage, mais il est plus strict
+                    dans sa syntaxe qu'HTML. Néanmoins, avec l'arrivée d'HTML5, HTML se rapproche
+                    un peu plus des standards d'XHTML.
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>Qu'est-ce que WebSQL ?</h2>
+                <p>C'est une API de base de données locale servant à stocker
+                    des données dans le navigateur. Elle est aujourd'hui
+                    obsolète et il est fortement déconseillé de l'utiliser.
+                </p>
+            </div>
+            <div>
+                <h2>Qu'est-ce que le cache busting ?</h2>
+                <p>Le cache busting est une méthode permettant d'éviter que les navigateurs
+                    gardent des fichiers obsolètes en cache au lieu de les mettre à jour.
+                    Plusieurs techniques permettent d'effectuer ce "cache busting".
+                </p>
+                <ul>
+                    <li>
+                        Changer le nom du fichier mis à jour.
+                    </li>
+                    <li>
+                        Dans les en-têtes HTTP, il est possible de mettre une date d'expiration
+                        pour le cache.
+                    </li>
+                    <li>
+                        Utiliser un outil de construction comme Webpack.
+                    </li>
+                </ul>
+            </div>
+            <div class="my-10">
+                <h2>Qu'est-ce que la spécification HTML et l'implémentation du navigateur ?</h2>
+                <p>La spécification HTML est la documentation officielle établie par le W3C
+                    (World Wide Web Consortium). Elle établit les règles et la syntaxe HTML.
+                    Elle est évolutive.
+                </p>
+                <p>
+                    L'implémentation du navigateur est la façon dont les navigateurs vont
+                    retranscrire cette spécification HTML. Les interprétations peuvent varier
+                    et certains navigateurs implémentent de nouvelles fonctionnalités ou sont
+                    en retard sur d'autres, ce qui crée des incohérences entre une même page
+                    web sur différents navigateurs.
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>À quoi sert le DOCTYPE ?</h2>
+                <p>
+                    Il sert au navigateur à connaître le type du document,
+                    ce qui permet de meilleures performances et une meilleure interprétation
+                    du code, et évite également les erreurs d'interprétation.
+                    Le DOCTYPE est souvent une version HTML ou XHTML.
+                </p>
+            </div>
+            <div>
+                <h2>Qu'est-ce que le "progressive rendering" (rendu/affichage progressif) en HTML ?</h2>
+                <p>
+                    Le rendu progressif en HTML consiste à améliorer l'expérience utilisateur
+                    en affichant le plus rapidement possible les éléments susceptibles d'apparaître
+                    en premier pour l'utilisateur, tels que le header (d'où l'importance de la balise header),
+                    le texte (sans forcément charger sa police d'écriture à ce moment-là), les fichiers
+                    HTML, CSS et JavaScript. Le tout se fait de manière asynchrone et dès qu'une ressource est chargée,
+                    elle apparaît sur le site web.
+                </p>
+            </div>
+            <div>
+                <h2>À quoi sert l'attribut <mark>srcset</mark> de la balise <mark>img</mark> ?</h2>
+                <p>Il permet de proposer au navigateur plusieurs images en
+                    donnant une courte description de celles-ci, et le
+                    navigateur choisira automatiquement l'image à télécharger
+                    selon la taille de l'écran de l'utilisateur.
+                    Cela permet une économie de la bande passante et donc
+                    accroît les performances.
+                    <!--
+                        Voici un exemple de l'utilisation de l'attribut "srcset":
+                        <img 
+                            alt="un chat noir aux yeux verts" 
+                            srcset="chat300.jpg 300w, chat500.jpg 500w, chat800.jpg 800w, chat1100.jpg 1100w"
+                        />
+                    -->
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>Quel est le rôle de la balise "main" en HTML</h2>
+                <p>
+                    La balise "main" en HTML est utilisée pour regrouper le contenu
+                    principal d'une page web.
+                    Il ne doit y avoir qu'une seule balise "main" par page HTML.
+                    La balise main a une valeur sémantique pour les navigateurs.
+                    La balise main facilite la navigation pour les lecteurs d'écran
+                    et donc l'accessibilité pour les personnes réduites.
+                    La balise main est de type bloc.
+                </p>
+            </div>
+            <div>
+                <h2>Pourquoi faut-il utiliser les balises sémantiques dans HTML ?</h2>
+                <p> 
+                    Il est très fortement recommandé d'utiliser des balises sémantiques
+                    dès que cela est possible dans un fichier HTML.
+                    Les balises sémantiques améliorent fortement le référencement naturel
+                    des pages web.
+                </p>
+            </div>
+            <div>
+                <h2>Qu'est-ce que le format "webp" ?</h2>
+                <p>Le format webp est un format d'image développé par Google
+                    spécialement conçu pour le web. Il offre de nombreux avantages
+                    comme des performances accrues grâce à sa taille, une excellente qualité
+                    d'image, et une forte compatibilité avec les navigateurs.
+                </p>
+            </div>
+            <div class="my-10">
+                <h2>Peut-on générer une clé publique en HTML ?</h2>
+                <p>Il est techniquement possible de générer une clé publique
+                    dans un fichier HTML via les balises "script".
+                    Néanmoins, il est très fortement déconseillé d'utiliser cette
+                    méthode pour générer une clé publique pour des raisons de sécurité.
+                </p>
+            </div>
+            <div>
+                <h2>Pourquoi est-il plus judicieux de placer le fichier CSS 
+                    avant la balise "script" dans un fichier HTML ? 
+                </h2>
+                <p>Il est plus judicieux de placer un fichier CSS avant la balise "script" pour plusieurs raisons :</p>
+                <ul>
+                    <li>
+                        Le chargement de la structure HTML ainsi que de son design se feront avant le chargement du fichier 
+                        script, qui peut être volumineux et lent à charger.
+                    </li>
+                    <li>
+                        En cas de problème avec le script, la page web affichera tout de même 
+                        une interface utilisateur agréable grâce au CSS chargé avant le script. 
+                    </li>
+                </ul>
+            </div>
+            <div class="my-10">
+                <h2>Qu'est-ce qu'un composant web ?</h2>
+                <p>
+                    Un composant web, également appelé widget, est un bloc de code
+                    réutilisable. Un composant web peut normalement fonctionner indépendamment 
+                    et possède sa propre logique.
+                </p>
+            </div>
+        </body>
+        </html>
+        
