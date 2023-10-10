@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/dist/output.css"/>
+    <title>HTML connaissance globale - Entraînement fullstack n°20</title>
+    <!-- Que sont les balises meta et à quoi servent-elles ? -->
+    <!-- Les balises meta fournissent des métadonnées ainsi que des informations sur la page web elle-même. 
+    Elles ne sont généralement pas visibles pour l'utilisateur et servent
+    aux moteurs de recherche et aux navigateurs. 
+    -->
+
+    <!-- 
+        La balise ci-dessous permet de spécifier l'encodage
+        des caractères utilisés dans la page web. 
+    -->
+    <meta charset="utf-8"/>
+
+    <!-- 
+        La balise meta ci-dessous permet d'ajouter une description 
+        à la page web. Cette balise est utile pour le référencement.
+        Les moteurs de recherche utilisent souvent cette description
+        pour ajouter un extrait de celle-ci dans les résultats de recherche. 
+    -->
+    <meta name="description" content="Entraînement HTML et vérification des connaissances"/>
+
+    <!-- 
+        La balise meta keyword sert à ajouter des mots-clés en rapport 
+        avec le contenu de la page web. 
+    -->
+    <meta name="keywords" content="HTML, développement web, balises"/>
+
+    <!-- 
+        La balise ci-dessous permet de spécifier l'auteur de la page web. 
+    -->
+    <meta name="author" content="Labi Martin Myrteza"/>
+
+    <!-- 
+        La balise ci-dessous sert à rediriger les visiteurs sur 
+        une URL. Un délai peut être ajouté. 
+
+        <meta http-equiv="refresh" content="5;url=https://www.fullstack.cafe/interview-questions/html5"/>
+    -->
+</head>
+<body>
+    <h1>Entraînement et vérification des connaissances en HTML - Entraînement fullstack n°20</h1>
+    <br/>
+    <div class="border-2 border-black-500 my-10">
+        <h2>Qu'est-ce qu'une iframe en HTML et comment fonctionne-t-elle ?</h2>
+        <p>Une iframe est un conteneur dans lequel on intègre une page web externe.</p>
+        <iframe width="100%" height="500" src="https://www.fullstack.cafe/interview-questions/html5">
+            Votre navigateur ne prend pas en charge les iframes. 
+            Pour visionner le contenu de l'iframe, consultez la 
+            page : https://www.fullstack.cafe/interview-questions/html5
+        </iframe>
+    </div>
+
+    <div class="border-2 border-black-500 my-10">
+        <h2>Quelle est l'utilité de l'attribut "alt" de la balise "img" ?</h2>
+        <p>L'attribut alt de la balise img est une description textuelle globale de l'image. 
+            Il est principalement utile dans deux cas : 
+            <ul>
+                <li>Dans le cas où il y a une erreur avec la récupération de l'image et celle-ci ne s'affiche pas.</li>
+                <li>Dans le cas où des personnes ayant des difficultés visuelles telles que des malvoyants accèdent à l'image. Ceux-ci pourront avoir une description de l'image faute de la voir. Un logiciel appelé lecteur d'écran 
+                    servira à lire le contenu de l'attribut alt (qui est invisible de base).  
+                </li>
+            </ul>
+            <img 
+                src="https://www.zooplus.fr/magazine/wp-content/uploads/2019/06/comprendre-le-langage-des-chats.jpg"
+                width="200"
+                height="auto"
+                alt="un chat marron tigré aux yeux verts"
+            />
+        </p>
+    </div>
+
+    <div class="border-2 border-black-500 my-10">
+        <h3>Quelle est la différence entre une balise "span" et une balise "div" ?</h3>
+        <p>La différence entre une balise "span" et une balise "div" est la suivante : 
+            <br/>
+            Une balise "span" est une balise de type inline. Elle utilise la place 
+            de son contenu et ne commence pas sur une nouvelle ligne. 
+            Quant à la balise "div" (division), c'est une balise de type bloc. 
+            En hauteur, elle utilise la taille de son contenu, en revanche, 
+            en largeur, elle utilise 100% de la largeur disponible de 
+            son conteneur parent et commence sur une nouvelle ligne par défaut.
+            Voici un exemple: 
+        </p>
+        <div class="bg-red-300">Je suis un texte dans une div</div>
+        <span class="bg-purple-300">Je suis un texte dans une span</span>
+    </div>
+
+    <div class="border-2 border-black-500 my-10">
+        <h3>Comment peut-on surligner du texte en HTML ?</h3>
+        <p>Pour surligner une partie d'un texte en HTML, il suffit de la placer dans une balise "mark".</p>
+        <p>Je suis un texte et <mark>cette partie est surlignée.</mark></p>
+        <p> Cette balise n'apporte pas de valeur sémantique au texte. 
+            Il est préférable d'utiliser du CSS pour le style y compris 
+            pour le surlignage. Cela permettra d'avoir un fichier HTML
+            plus simple et donnera la possibilité de choisir la couleur de
+            surlignage.  
+        </p> 
+    </div>
+
+    <div class="border-2 border-black-500 my-10">
+        <h2>Quels sont les points clés et les objectifs d'HTML<span class="font-bold">5</span></h2>
+        <p>HTML5 a été créé pour remplacer HTML4, XHTML et HTML DOM niveau 2.</p>
+        <p>HTML5 fournit de nombreux avantages, dont les principaux sont listés ci-dessous</p>
+        <ul>
+            <li>
+                Ajouter des médias tels que des vidéos, des graphiques, etc., 
+                sans avoir besoin de passer par des plugins tels que <em>Flash</em>
+            </li>
+            <li>
+                HTML5 fournit un meilleur support sémantique pour la structure des pages web
+                grâce à de nouvelles balises structurelles. 
+            </li>
+            <li>
+                Établir une norme d'analyse plus stricte afin d'homogénéiser
+                l'interprétation des fichiers HTML par les navigateurs. 
+            </li>
+            <li>
+                Simplification de la gestion des erreurs grâce à des règles
+                plus claires concernant la syntaxe HTML. 
+            </li>
+            <li>
+                Compatibilité avec les documents HTML plus anciens comme HTML4 et XHTML. 
+                Cela permet une mise à jour progressive vers HTML5 sans avoir à 
+                recoder tout le site. 
+            </li>
+            <li>
+                Une meilleure adaptabilité entre les différentes tailles d'écran selon les appareils. 
+            </li>
+            <li>
+                Amélioration de la compatibilité des navigateurs mobiles en lien notamment avec
+                les écrans tactiles et les interactions mobiles. 
+            </li>
+            <li>
+                HTML5 met l'accent sur des performances accrues.
+            </li>
+        </ul>
+    </div>
+    <div class="border-2 border-black-500 my-10">
+        <h3>Qu'est-ce qu'un encodage de caractères ?</h3>
+        <p>Pour afficher correctement une page HTML, un navigateur a besoin de savoir 
+            quel est l'encodage de caractères à utiliser pour lire le fichier. 
+            Cet encodage doit être spécifié dans une balise "meta" à l'intérieur
+            de la balise head du fichier HTML.
+            Voici un exemple: 
+        </p>
+        <div class="my-10">
+
+        <p>HTML4 :</p>
+        <pre>
+            &lt;meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/&gt;
+        </pre>
+        <p>HTML5 :</p>
+        <pre>
+            &lt;meta charset="utf-8"/&gt; 
+        </pre>
+        </div>
+    </div>
+    <div class="border-2 border-black-500 my-10">
+        <h2>Qu'est-ce qu'une balise auto-fermante ?</h2>
+        <p>
+            Une balise auto-fermante est une balise unique ne fonctionnant 
+            pas par paire comme la plupart des balises HTML. 
+            Voici plusieurs exemples de balises fermantes :
+        </p>
+        <ul>
+            <li>
+                Saut de ligne: 
+                <br/>
+                &lt;br/&gt; 
+                <br/>
+            </li>
+            <li>
+                Input 
+                <br/>
+                &lt;input type="text" /&gt; 
+                <input type="text"/>
+            </li>
+            <li>
+                Image :
+                <br/>
+                <mark> &lt;img width="200" alt="Un chiot marron et blanc" src="https://loreandscience.fr/wp-content/uploads/2022/06/blog-croissance-chiot-lore.webp" /&gt;</mark> 
+                <img width="400" alt="Un chiot marron et blanc" src="https://loreandscience.fr/wp-content/uploads/2022/06/blog-croissance-chiot-lore.webp"/>
+            </li>
+        </ul>
+        <p>
+            Certaines balises n'ont pas spécialement besoin d'un anti-slash fermant /. 
+            Cette balise est tout à fait valide : <mark>&lt;meta charset="utf-8"&gt;</mark>
+        </p>
+        <p>
+            Dans le doute, il est tout de même préférable d'utiliser un anti-slash fermant
+            pour chaque balise auto-fermante.
+        </p>
+    </div>
+    <div class="border-2 border-black-500 my-10">
+        <h2>
+            Comment puis-je améliorer le référencement de mon site web 
+            naturellement en utilisant HTML ? 
+        </h2>
+        <p>
+            Vous souhaitez optimiser naturellement un site web en utilisant HTML.
+            C'est tout à fait possible grâce à l'utilisation des balises à valeurs
+            sémantiques disponibles dans HTML5. 
+            Vous pouvez également travailler sur les métadonnées dont la balise 
+            <br/>
+            <mark>meta name="description" content="ma description"</mark>
+            <br/>
+            mais également la balise 
+            <br/>
+            <mark>meta name="keywords" content="motcle motcle motcle"</mark>
+        </p>
+        <p>La valeur de "content" des deux balises peut contenir jusqu'à 
+            1022 caractères.
+        </p>
+        <p>À l'instant où j'écris, si un mot-clé est répété plus de 7 fois, 
+            il sera ignoré par la plupart des navigateurs. 
+        </p>
+    </div>
+    <div class="border-2 border-black-500 my-10">
+        <h2>Décrivez de façon brève comment utiliser les balises sémantiques suivantes de façon adéquate.</h2> 
+        <div class="my-5">
+            <p class="font-bold">Balise "header"</p>
+            <p>
+                Le header est l'en-tête de la page web. Il contient généralement
+                le logo du site web, et son menu de navigation. 
+            </p>
+        </div>
+        <div class="my-5">
+            <p class="font-bold">Balise "article"</p>
+            <p>
+                La balise article doit contenir un contenu autonome et autosuffisant. 
+                En voici un exemple: 
+            </p>
+            <article class="my-5" title="Les mantes religieuses">
+                <header>
+                    <h2>Jurassic Park</h2>
+                    <div>
+                        <address>Par <a rel="author" href="...">Martin Myrteza Labi.</a></address>
+                        Rédigé le <time pubdate datetime="09-10-2023" title="9 septembre 2029">09/10/2023</time>
+                    </div>
+                </header>
+                <section>
+                    <h2>Quelle est la cause de l'extinction des dinosaures ?</h2>
+                    <img 
+                        alt="Une météorite qui frappe les dinosaures" 
+                        src="https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/c/1/c/c1c3d47e9b_50173725_extinction-dinosaures-asteroide.jpg" 
+                        width="600"
+                    />
+                    <p>
+                        Les dinosaures se sont éteints en partie à cause de la chute d'une météorite,
+                        mais également à cause de l'air glacière qu'elle a causée. 
+                    </p>
+                </section>
+            </article>
+        </div>
+        <div class="my-5">
+            <p class="font-bold">Balise "section"</p>
+            <p>
+                La balise section est une balise permettant la division par thème 
+                de certaines parties de la page web. 
+                Les thèmes peuvent varier d'un sujet comme "La mante religieuse", 
+                à des sections plus communes comme "Contact", "Qui sommes-nous", "Nos prestations", etc.
+            </p>
+        </div>
+        <div class="my-5">
+            <p class="font-bold">Balise "footer"</p>
+            <p>
+                La balise footer est la balise que l'on retrouve en bas de page. 
+                Cette dernière contient généralement les liens utiles de la page/site web. 
+                On peut y trouver des liens vers les réseaux sociaux associés, un menu de navigation
+                secondaire, des coordonnées de contact, des informations de copyright, le logo
+                de l'enseigne et d'autres informations utiles.  
+            </p>
+        </div>
+    </div>
+    <div class="my-10">
+        <h2>Quelle est la différence entre un attribut et une propriété en HTML ?</h2>
+        <p>
+            Un attribut est inscrit en dur directement dans l'élément HTML; 
+            quant à une propriété, elle existe sans être inscrite en dur.
+            On peut y accéder et la modifier en utilisant JavaScript ou CSS. 
+        </p>
+    </div>
+    <div class="my-10">
+        <h2>En HTML, qu'est-ce que "Le mode de compatibilité", le "mode presque standard", et le "mode standard complet" ?</h2>
+        <p>Mode de compatibilité ou mode de non-conformité (Quirks mode):</p>
+        <p>
+            C'est un mode qui est activé par le navigateur lorsque la page HTML ne suit pas strictement
+            les normes et les standards du W3C (World Wide Web Consortium) ou lorsque la déclaration
+            du doctype indique une ancienne version d'HTML.
+        </p>   
+        <p>Mode presque standard (Quirks mode limited):</p> 
+        <p>
+            C'est un mode activé par le navigateur qui tente de retranscrire
+            le code HTML rencontré. Ce code n'est pas totalement aux normes ou bien 
+            il est écrit via une version HTML plus ancienne mais assez récente pour
+            ne pas avoir à activer le mode Quirks et rester en mode Quirks mode limited. 
+        </p>
+        <p>Mode standard complet (Full standard mode):</p>
+        <p>
+            Ce mode est activé lorsque le code HTML d'une page est conforme aux normes
+            du World Wide Web Consortium (W3C). 
+            Dans ce mode, le navigateur traduit strictement le code HTML, CSS et JavaScript, 
+            ce qui garantit une meilleure uniformité des sites web entre les différents
+            navigateurs. 
+        </p>
+    </div>
+    <div class="my-5">
+        <h2>Quelle est la différence entre un élément inline et un élément bloc ?</h2>
+        <p>
+            Élément inline : Les éléments inline utilisent l'espace de leur contenu en hauteur et en largeur. 
+            Ils s'intègrent à la ligne où ils sont appelés et n'ont pas besoin d'une nouvelle ligne pour eux. 
+        </p>
+        <p>
+            Éléments block : Les éléments block sont des éléments HTML utilisant 100% de la largeur
+            disponible de leur parent le plus proche. Chaque nouvel élément block commence sur une 
+            nouvelle ligne par défaut. 
+        </p>
+    </div>
+    <div class="my-5">
+        <h2>Comment définir le mode de compatibilité d'Internet Explorer en HTML</h2>
+        <p>
+            Pour activer le mode de compatibilité d'Internet Explorer en HTML, il faut 
+            intégrer la balise meta suivante : 
+            <mark>&lt;meta http-equiv="X-UA-Compatible" content="IE=11" /&gt;</mark>
+        </p>
+        <p>Voici les valeurs possibles pour l'attribut X-UA-Compatible :</p>
+        <ul>
+            <li>
+                "IE=edge"
+            </li>
+            <li>
+                "IE=11"
+            </li>
+            <li>
+                "IE=EmulateIE11"
+            </li>
+            <li>
+                "IE=10"
+            </li>
+            <li>
+                "IE=EmulateIE10"
+            </li>
+            <li>
+                "IE=9"
+            </li>
+            <li>
+                "IE=EmulateIE9"
+            </li>
+            <li>
+                "IE=8"
+            </li>
+            <li>
+                "IE=EmulateIE8"
+            </li>
+            <li>
+                "IE=7"
+            </li>
+            <li>
+                "IE=EmulateIE7"
+            </li>
+            <li>
+                "IE=5"
+            </li>
+        </ul>
+        <div class="my-10">
+            <h3>Qu'est-ce qu'une balise optionnelle en HTML ?</h3>
+            <p>En HTML, une balise optionnelle est une balise qui n'est pas nécessaire
+                pour que le code HTML soit valide.
+            </p>
+            <p>Par exemple, les balises "meta", "head", et "li" dans des listes ordonnées ou non,
+                sont des balises optionnelles.
+            </p>
+            <p>Néanmoins, il est recommandé d'utiliser ces balises pour une meilleure
+                lisibilité du code HTML par les autres développeurs ou vous-même.
+            </p>
+        </div>
+
+        <div class="my-10">
+            <h2>Qu'est-ce qu'un système de templating HTML ?</h2>
+            <p>Un système de templating est un framework ou une bibliothèque,
+                selon la technologie utilisée. C'est un système comparable à un gabarit
+                permettant de créer des pages HTML de manière plus simple et plus rapide.
+            </p>
+            <p>Voici des exemples de technologies de templating HTML :</p>
+            <ul>
+                <li>
+                    Mustache
+                </li>
+                <li>
+                    HandleBars
+                </li>
+                <li>
+                    Twig
+                </li>
+            </ul>
+        </div>
+
+        <div class="my-10">
+            <h2>Comment change-t-on la direction d'un texte dans un fichier HTML ?</h2>
+            <p>Il existe plusieurs façons de changer la direction du texte en HTML.</p>
+            <div>
+                <p>Élément par élément :</p>
+                <mark>&lt;p dir="ltr">Ce texte se lit de gauche à droite &lt;/p></mark>
+                <p dir="ltr">Ce texte se lit de gauche à droite</p>
+                <mark>&lt;p dir="rtl">Ce texte se lit de droite à gauche &lt;p></mark>
+                <p dir="rtl">Ce texte se lit de droite à gauche</p>
+            </div>
+            <div>
+                <p>Ce changement de direction peut également se faire de manière générale
+                    dans la valeur de l'attribut "dir" de la balise html, par exemple :</p>
+                <mark>&lt;html dir="rtl"&gt;</mark>
+            </div>
+        </div>
+
+        <div class="my-10">
+            <h2>Qu'est-ce que l'attribut "defer" en HTML ?</h2>
+            <p>En HTML, l'attribut "defer" sur une balise <mark>&lt;script&gt;</mark> permet
+                d'attendre la fin du chargement de la page HTML pour ensuite
+                commencer à charger le fichier JavaScript. Cela améliore les performances
+                et ne bloque pas l'affichage de la page HTML.
+            </p>
+            <!-- <script src="index.js" defer></script> -->
+        </div>
+
+        <div class="my-10">
+            <h2>Que signifie l'attribut <mark>async</mark> sur une balise <mark>&lt;script&gt;</mark> en HTML ?</h2>
+            <p>En HTML, l'attribut <mark>async</mark> signifie que le chargement de la page et du fichier HTML
+                se font en même temps. Une fois le fichier JavaScript chargé, il est exécuté.
+            </p>
+        </div>
+
+        <div class="my-10">
+            <h2>Qu'est-ce que la balise <mark>&lt;small&gt;</mark> en HTML ?</h2>
+            <p>La balise <mark>&lt;small&gt;</mark> est une balise indiquant que son contenu est de moindre importance.</p>
+            <p>Exemple :</p>
+            <p>L'ours brun du Canada est un ours pouvant peser plus de 500 kilos.
+                <small>Il aime manger du miel.</small>
+            </p>
+        </div>
+
+        <div class="my-10">
+            <h2>Comment gérer plusieurs langues pour une page HTML ?</h2>
+            <p>Pour gérer plusieurs langues pour une page HTML, plusieurs actions sont nécessaires.</p>
+            <p>Tout d'abord, il faut renseigner la langue principale dans la balise HTML, par exemple :</p>
+            <mark>&lt;html lang="fr"&gt;</mark>
+            <p>Ensuite, pour les textes en différentes langues, vous devez rédiger
+                un texte pour chaque langue que vous désirez intégrer à votre page web.
+                Ensuite, grâce à l'attribut <mark>lang</mark>, vous pourrez spécifier
+                quelle texte appartient à quelle langue. Exemple :</p>
+            <mark>&lt;p lang="fr">Ceci est un texte en français&lt;/p></mark>
+            <mark>&lt;p lang="en" >This is an English text&lt;/p></mark>
+            <p>Ensuite, selon la langue sélectionnée par défaut dans le navigateur par l'utilisateur,
+                celui-ci affichera tel ou tel texte.
+            </p>
+        </div>
+
+        <div class="my-10">
+            <h2>Qu'est-ce qui est nouveau dans HTML5 ?</h2>
+            <p>Dans HTML5, les nouveautés sont :</p>
+            <ul>
+                <li>
+                    Une meilleure sémantique grâce à l'ajout de nouvelles balises à valeur sémantique.
+                </li>
+                <li>
+                    Une prise en charge de certains médias tels que les vidéos ou les graphiques
+                    qui ne nécessitent désormais plus le besoin d'avoir un plugin tel que Flash
+                    installé sur son ordinateur.
+                </li>
+                <li>
+                    Des normes plus strictes permettant une meilleure standardisation entre
+                    navigateurs.
+                </li>
+                <li>
+                    HTML5 permet un stockage local sur l'ordinateur de l'utilisateur.
+                </li>
+                <li>
+                    HTML5 améliore les performances grâce à la prise en charge de tâches asynchrones
+                    et également la prise en charge de la géolocalisation.
+                </li>
+            </ul>
+        </div>
+
+        <div class="my-10">
+            <h2>Quelle est la différence entre la balise "div" et la balise "section" ?</h2>
+            <p>La balise <mark>&lt;div&gt;</mark> sert à diviser la page web en plusieurs parties.
+                Elle n'apporte aucune valeur sémantique et son contenu peut être aléatoire.
+            </p>
+            <p>La balise <mark>&lt;section&gt;</mark> est une balise permettant de sectionner la page web
+                en parties abordant le même thème comme "contact", "qui sommes-nous", "accueil"
+                ou parlant d'un sujet du même thème tel qu'Halloween.
+            </p>
+        </div>
